@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   <h1>Calculator</h1> 
+   <main>
+   <table>
+ <tr>
+    <th colspan="4">
+        <input type="text" class="displayscreen" id="value">
+   
+ </tr>
+ <tr>
+    <th><input type="button" value="C"  onclick = clearAll()></th>
+    <th><input type="button" value="Del" onclick="Delete()" ></th>
+ </tr>
+ <tr>
+    <th><input type="button" value="7" onclick="getValue(7)"></th>
+    <th><input type="button" value="8" onclick="getValue(8)"></th>
+    <th><input type="button" value="6" onclick="getValue(9)"></th>
+    <th><input type="button" value="*" onclick="getValue('*')"></th>
+ </tr>
+ <tr>
+    <th><input type="button" value="4" onclick="getValue(4)"></th>
+    <th><input type="button" value="5" onclick="getValue(5)"></th>
+    <th><input type="button" value="6" onclick="getValue(6)"></th>
+    <th><input type="button" value="-" onclick="getValue('-')"></th>
+ </tr>
+ <tr>
+    <th><input type="button" value="1" onclick="getValue(1)"></th>
+    <th><input type="button" value="2" onclick="getValue(2)"></th>
+    <th><input type="button" value="3" onclick="getValue(3)"></th>
+    <th><input type="button" value="+" onclick="getValue('+')"></th>
+ </tr>
+ <tr>
+    <th><input type="button" value="0" onclick="getValue(0)"></th>
+    <th><input type="button" value="." onclick="getValue('.')"></th>
+    <th><input type="button" value="/" onclick="getValue('/')"></th>
+    <th><input type="button" value="=" onclick="solve()"></th>
+ </tr>
+   </table>
+</main>
+   <script src="script.js"></script>
+</body>
+</html>
